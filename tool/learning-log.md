@@ -7,8 +7,7 @@
 ---
 
 ### 9/29/25: Getting started
-
-* From the website doc for phaser installing; the cdn link is in the following
+From the website doc for (phaser installing)[https://docs.phaser.io/phaser/getting-started/installation]  the cdn link is in the following 
 
 
 ### X/X/XX:
