@@ -1,19 +1,21 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: Phaser
 
-## Project: **X**
+## Project: An game like Duck Life..
 
 ---
 
+### 9/29/25: Getting started
+
+* From the website doc for phaser installing; the cdn link is in the following
+
+
 ### X/X/XX:
 * Text
 
-### X/X/XX:
-* Text
 
-
-<!-- 
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
