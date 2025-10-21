@@ -36,6 +36,25 @@ var newGame = Phaser.game(configuration);
   
 </ul>
 
+### 10/6/25 + 10/13/25 Learning...
+<ul>
+  <li>Instead of following the youtube tutorials since it's mostly on game creation, instead I will be following the Phaser Documentations tutorials</li>
+  <li>Starting from: <a href= "https://docs.phaser.io/phaser/concepts/cameras">Tutorial</a></li>
+  <li>Camera in Phaser can either destroyed, created and others</li>
+  <li>You can access an camera manager using the code of 
+    
+  ```js
+    var camera = this.cameras.main;
+  ```    
+</li>
+<li>How to add an new camera? use
+
+  ```js
+  .add()</li>
+```
+</li>
+</ul>
+
 
 
 
