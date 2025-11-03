@@ -36,7 +36,7 @@ var newGame = Phaser.game(configuration);
   
 </ul>
 
-### 10/6/25 + 10/13/25 Learning...
+### 10/27/25 Learning...
 <ul>
   <li>Instead of following the youtube tutorials since it's mostly on game creation, instead I will be following the Phaser Documentations tutorials</li>
   <li>Starting from: <a href= "https://docs.phaser.io/phaser/concepts/cameras">Tutorial</a></li>
@@ -45,14 +45,39 @@ var newGame = Phaser.game(configuration);
     
   ```js
     var camera = this.cameras.main;
-  ```    
+  ```
+<li>This camera is already created by phaser meaning you can modify it however you want</li> 
 </li>
-<li>How to add an new camera? use
-
+<li>Also managed to mess around with the camera to have an specific size, and position for example:
+  
   ```js
-  .add()</li>
+var newCamera = this.cameras.add(60, 40, 250, 400);
 ```
-</li>
+<li> The first two, coordinates with in the brackets () are the x and the y position and the last two is the width and height</li>
+</li> Basically, its 250x wide, 400 tall and located somewhere around the top left corner of the IDE</li>
+<li>A more in-depth about the x and y positioning of camera</li>
+
+```js
+var top = camera.x;
+var left = camera.y;
+```
+<li>This code determines the position of the camera. For example: x represents the horizontal position whereas the y represents the vertical position. (ONLY for top left angle)
+
+```js
+this.cameras.addExisting(camera);
+``` 
+<li>This camera code allows you to add an camera, which already exited on top of it. So that the current scene you created, can both recongize it and both use it</li>
+<li>Whats the different between</li>
+
+```js 
+this.cameras.remove(camera);
+```
+<li>and</li>
+
+```js
+camera.destroy();
+```
+<li>Since doesn't both remove the camera? Or does it mean one removes the camera temporarily and the other one removes it completely?</li>
 </ul>
 
 
