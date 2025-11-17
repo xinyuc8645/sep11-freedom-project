@@ -80,6 +80,39 @@ camera.destroy();
 <li>Since doesn't both remove the camera? Or does it mean one removes the camera temporarily and the other one removes it completely?</li>
 </ul>
 
+### 11/10/25 Still Learning Very Much
+<ul>
+  <li>Last time left off at tutorial in camera;still continue off of camera</li>
+  <li>Viewport in Phaser:</li>
+  <li>Base from the documentation, the viewport in phaser is, an camera's "Window" or the visible area in which the player actually sees
+    <li>Key properties include:</li>
+  <li>x and y position one; x is left edge of the viewport, y is the top edge of the viewport</li>
+  <li>Width, and height; self explantory</li>
+  <li>CenterX and centerY, centerX is horizontal center of the viewport and centerY is the vertical center of the viewport</li>
+  <li>It's purpose:Can be moved, centered and resized, and also defines the visible area of the game in which the player sees</li>
+  <li>An code for this:</li>
+  
+```js
+  this.cameras.main.setViewport(0, 0, 400, 300);
+```
+<li>What this do is this: sets the position of both x and y to 0 and the width being 400 and the height of 300</li>
+<li>This code can be used by only camera size, height, position and viewport and etc</li>
+<li>Worldview</li>
+<li>Worldview is the area in which the game world that the camera sees currently or can "see"; it depends on the camera rotation, zoom and others</li>
+<li>What's the difference between worldview and viewport?: Think of it like this, viewport is the window frame, and worldview is the the part of area you can see through, that window</li>
+<li>Usage of worldview</li>
+<li>Helps determine what part of the game is visible, useful for tracking visibility detectio of collision</li>
+<li>Some codes for it are: Getting the displayed height and the midpoint</li>
+
+```js
+var x = camera.midPoint.x;
+var y = camera.midPoint.y;
+```
+
+</ul>
+
+
+
 
 
 
