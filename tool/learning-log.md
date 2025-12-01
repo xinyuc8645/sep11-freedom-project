@@ -111,7 +111,41 @@ var y = camera.midPoint.y;
 
 </ul>
 
+### 11/10/24 Cameras..Still?
+<ul>
+  <li>I know I know there for the past 3 or 2 learning log I've been talking and documentating about cameras within the phaser, however after this learning log I promise no more cameras, we'll move on to something new</li>
+  <li>Topic: Cameras;Visibility/Input</li>
+  <li>What is visibility in camera for phaser? Well to to put it in simple words bascially, whether the camera will be able to show's currently what's on ths screen and if the camera is visible then, it can render the scene</li>
+  For example this code 
+  
+  ```js
+  var visible = camera.visible;
+  ```
+<li>Makes the camera visible,however how do turn it off and off?</li>
 
+```js
+camera.setVisible(true);
+```
+<li>This makes the camera value true meaning its visible</li>
+
+```js
+camera.setVisible(false);
+```
+<li>This makes the camera value false meaning its not visible</li>
+<li>Remember, an visible camera RENDERS the scene whereas an invisible camera does NOT render the scene</li>
+<li>You can also set an background color for the camera by using this code:</li>
+
+```js
+camera.setBackgroundColor(blue);
+//makes the background color of the camera blue
+```
+<li>What if I want to render in an certain scene, however an existing object within that scene isn't neccessary and I want it out completely but at the same time I don't want to make my camera invisible so how can I ignore that object? Well...</li>
+
+```js
+camera.ignore(gameObject);
+```
+<li>This code ignores an certain game object within the scene; the object can either be an game object, array of them</li>
+</ul>
 
 
 
