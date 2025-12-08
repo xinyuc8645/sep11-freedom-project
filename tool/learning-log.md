@@ -111,7 +111,7 @@ var y = camera.midPoint.y;
 
 </ul>
 
-### 11/10/24 Cameras..Still?
+### 11/17/24 Cameras..Still?
 <ul>
   <li>I know I know there for the past 3 or 2 learning log I've been talking and documentating about cameras within the phaser, however after this learning log I promise no more cameras, we'll move on to something new</li>
   <li>Topic: Cameras;Visibility/Input</li>
