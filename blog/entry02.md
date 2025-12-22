@@ -2,7 +2,7 @@
 ##### 12/21/25
 
 # Context
-Alright, for this blog, we'll be mainly exploring cameras, viewport and visibility within phaser. I think for the past 3 or couple of learning logs, I've been heavily focused on exploring cameras within phaser. Since camera defines how the user itself sees the overall screen of the stage and how they can interact with the objects involved in the stage. If I rememeber it correct last time in the blog 1, I only explored the basic's like why I choosed the tool phaser, what led me to it and etc. Basically the basics. Therefore we are moving pass that. So buckle up..I guess. And if you need an reference to what I'm talking about, [look back at my learning log]
+Alright, for this blog, we'll be mainly exploring cameras, viewport and visibility within phaser. I think for the past 3 or couple of learning logs, I've been heavily focused on exploring cameras within phaser. Since camera defines how the user itself sees the overall screen of the stage and how they can interact with the objects involved in the stage. If I rememeber it correct last time in the blog 1, I only explored the basic's like why I choosed the tool phaser, what led me to it and etc. Basically the basics. Therefore we are moving pass that. So buckle up..I guess. And if you need an reference to what I'm talking about, [look back at my learning log](https://github.com/xinyuc8645/sep11-freedom-project/blob/main/tool/learning-log.md)
 # Content
 ### Viewport
 Alright, so for the content, I just want to do an basic recap of the things I learned from the learning log from tinkering with phaser. We know that viewport, in this case is the camera's vision, basically the area and the visibility the "user" can actually see.
