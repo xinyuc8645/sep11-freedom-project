@@ -42,7 +42,8 @@ Alright, last thing before I forget, the main goal of my break goal for the FP p
 # Engineering Designing Process
 Base off of everything's that's been going I would consider myself currently in the stage of 2 which is researching/gather information. The reason why I say that is becasue I do not think I'm at step 1 since I already have a problem to define which is learning my tool more. In which case my tool phaser. However currently I'm only on the camera part of the phaser too. In the documentation there is alot more to phaser tool than just camera. Therefore I believe step 2 defining and researching more about the tool is the best option and that if I were to move on past to step's like step 3 or 4 it would have an massive gap in-between. Since I would not have enough knowledge to help me build and test
 # Skill
-### Code skills: Ok ok I know for the last blog I also put something like "basic programming skills" but trust me its essential and needed for the tool of phaser. For example, last time I only included if statement therefore I want to refresh your memory again. Let's say if you were to code an game that makes has an an character, he has 5 lives, and if all his lives are gone he basically dieds, and games over. So by using the conditonals if statement you can easily simulate this by:
+### Code skills:
+Ok ok I know for the last blog I also put something like "basic programming skills" but trust me its essential and needed for the tool of phaser. For example, last time I only included if statement therefore I want to refresh your memory again. Let's say if you were to code an game that makes has an an character, he has 5 lives, and if all his lives are gone he basically dieds, and games over. So by using the conditonals if statement you can easily simulate this by:
 ```js
 if (npcHealth <= 0) {
 console.log("You are dead! Game Over");
