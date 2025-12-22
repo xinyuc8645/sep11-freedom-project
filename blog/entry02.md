@@ -39,9 +39,6 @@ camera.setVisible(true);
 The top code makes it so that the camera ignore an certain object (any object you choose it to be) and the bottom at the same time while it ignores that object, the camera still renders in that scene
 ### Goal for break for FP project
 Alright, last thing before I forget, the main goal of my break goal for the FP project is to learn even more and tinker with my tool. Since currently I do not believe I have both enough information the the ability to fully code an game within phaser and I also do not believe I have yet to learn more about my tool. You may think that we started this project already 3 months, however that is still not quite enough. Therefore my goal is to learn more about my tool, more specifically in the sections of animations;key : Unique key of this animation data,duration : The duration, in ms, of this frame of the animation, and etc from the API documentation of the phaser tool
-
-frames : An array of {key, frame}
-
 # Engineering Designing Process
 Base off of everything's that's been going I would consider myself currently in the stage of 2 which is researching/gather information. The reason why I say that is becasue I do not think I'm at step 1 since I already have a problem to define which is learning my tool more. In which case my tool phaser. However currently I'm only on the camera part of the phaser too. In the documentation there is alot more to phaser tool than just camera. Therefore I believe step 2 defining and researching more about the tool is the best option and that if I were to move on past to step's like step 3 or 4 it would have an massive gap in-between. Since I would not have enough knowledge to help me build and test
 # Skill
