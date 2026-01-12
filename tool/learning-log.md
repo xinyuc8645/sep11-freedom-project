@@ -147,7 +147,33 @@ camera.ignore(gameObject);
 <li>This code ignores an certain game object within the scene; the object can either be an game object, array of them</li>
 </ul>
 
+### 1/9/26 New Year, New topic
+<ul>
+  <li>OK, as previously mentioned I do want to move on to other section and topic for phaser as the camera section is very long, therefore I will be kind of focusing both on action and animation.</li>
+  <li>Think of Phaser Actions codes, as part of an function --> Can be applied mulitple times or can be run once inside an loop</li>
+  <li>The main code that applies this action code towards an certain game object is:</li>
+  
+  ```js
+Phaser.Actions.SetAlpha(myGroup.getSomething(), 0.5);
+  ```
+  <li>In this case, we are invoking this action, by calling the group that exist within our game called, getSomething </li>
+  <li>There is also different parameters within an action; there is 3 which includes step, index, and direction </li>
+  <li>In terms of step: this value changes how much an certain object change when the action is runned in an array, so that instead of every object within the game getting the same exact value, each game object will be different from others</li>
+  <li>An code to represent this is:</li>
 
+  ```js
+Phaser.Actions.SetX(sprites, 100, 50);
+```
+<li>This example was used in the documentation, in this case we set the step value to 50, meaning every sprite that moves one afer another will be + 50 so on. The formula for calculating this is the object = normalValue + (stepValue + indexValue)</li>
+<li>The 100 means base value and the 50 means the step value. In this situation the index value is automatically since it moves based on the object of the sprites</li>
+<li>However what happens when you do not pass an step value but instead only an base value?</li>
+
+```js
+Phaser.Actions.SetX(sprites, 100);
+```
+<li>Well in this case, you can see the 50 is not there. Soo what would happen? Well then in this case every object with the name called sprite would have the same exact x value since its SetX meaning sprite 1, 2, 3, 4, and so on are all x values of 100. Whereas  before the x values goes from 100, 150, 200, 250, 300 and etc. Basically if there is no step, then no variations</li>
+<li>Just to wrap it up for step: steps basically let you change an value of an object across multiple instances instead of making them all the same values with no variations(Do mind that this parameter is optional)</li>
+</ul>
 
 
 <!--
