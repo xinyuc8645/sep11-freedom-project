@@ -24,9 +24,24 @@ Moving on, you know that from the earlier code that when doing an phaser action 
   <li>Direction</li>
 </ul>
 Don't worry I'll explain each of them. Also before explaining them in-depth one thing to note is that when passing these parameters the phaser action that was passed originally will not change, however the arrays of sprite inside will.
+
 ### Step
 So, when we are taking about step, step is an parameter value that when used it increments and applies to each sprite as it loops within the array. What this means is that when it loops the array that the sprite is inside of, each sprite will have different values inside of having the same. For example:
 
+```js
+Before(without using step)
+Phaser.Actions.SetX(objects, 100);
+```
+What do you think will happen when the action is run and loops? Well, the x value is set horizontal at 100 meaning the sprite when runned by the phaser action will all have the same value of 100 for x
+However what happens when is it runned with step?
+
+```js
+After(Using step)
+Phaser.Actions.SetX(objects, 100, 50);
+```
+You might have notice that there is an extra set of values within the parameters (). So what does this mean exactly? This means that as the action is runned, the x value location of the sprite is different. For example the first x value starts at 100, then the second x is at 150, then at third x is 200 and so on fourth
+Why is using step important? Well, it helps in creating diversity and patterns so that its not just boring and plain and each value having the same value
+### Index
 [Previous](entry02.md) | [Next](entry04.md)
 
 [Home](../README.md)
