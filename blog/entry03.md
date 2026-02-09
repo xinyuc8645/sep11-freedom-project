@@ -82,7 +82,8 @@ In the variable objectsNames we have created an array, and inside those array th
 ### Goals regarding the next blog 4
 Ok, ok to be honest personally I feel like in this blog I have not yet cover a lot of stuff from the action section for phaser. And to be frank there IS a lot of stuff in each section for the phaser api documentations. However, I do really want to learn more about phaser. Therefore by the next blog I hope to cover the entirely(not entirely it's alot, but mostly) of the Actionlist;angle, call, Get first and get Last, Grid allign, and Inc alpha. That is basically the goal I want to set for my goal for blog 4. And if by blog 4, I somehow do not get to those points, then it looks like I'll have to work even harder than before and tinker with my tool. But mostly likely I will
 # Engineering Designing Process
-From blog 2, I believe I mention that
+From blog 2, I believe I mention that I am still on step 2. I know I know from the blog 2 there was an whole 2-3 months gaps in-between. However something that is important to understand is that even though during that 2-3 month time period was a lot of time to tinker and mess with the tool, personally I still do not yet believe that it is enough for steps 3 and 4. The reason is because there isn't yet an solution and a problem for me to solve. But if you think it like this way: "while tinkering I came across problems and I can solve this code by doing X solution" then yes somewhat in that case you can say that I'm in steps 3-4 since I'm diving deeper and deeper into the core of the phaser tool as an whole. So from my perspective I think I'm still on step 2, however if you think about the way I said, then you can think of it as steps 3-4
+# Skills
 
 [Previous](entry02.md) | [Next](entry04.md)
 
