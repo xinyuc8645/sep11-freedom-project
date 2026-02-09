@@ -81,7 +81,8 @@ Phaser.Actions.AlignTo(objectsNames, Phaser.Display.Align.LEFT_CENTER);
 In the variable objectsNames we have created an array, and inside those array there is 3 sprite/objects. By taking a look at the code below: the three sprite/object will be lined up vertically centered towards. (And also before you start saying that this code won't work, think of before the code there is already three objects/sprites called object1, object2, and object3
 ### Goals regarding the next blog 4
 Ok, ok to be honest personally I feel like in this blog I have not yet cover a lot of stuff from the action section for phaser. And to be frank there IS a lot of stuff in each section for the phaser api documentations. However, I do really want to learn more about phaser. Therefore by the next blog I hope to cover the entirely(not entirely it's alot, but mostly) of the Actionlist;angle, call, Get first and get Last, Grid allign, and Inc alpha. That is basically the goal I want to set for my goal for blog 4. And if by blog 4, I somehow do not get to those points, then it looks like I'll have to work even harder than before and tinker with my tool. But mostly likely I will
-
+# Engineering Designing Process
+From blog 2, I believe I mention that
 
 [Previous](entry02.md) | [Next](entry04.md)
 
