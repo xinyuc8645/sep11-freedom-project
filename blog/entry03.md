@@ -42,6 +42,45 @@ Phaser.Actions.SetX(objects, 100, 50);
 You might have notice that there is an extra set of values within the parameters (). So what does this mean exactly? This means that as the action is runned, the x value location of the sprite is different. For example the first x value starts at 100, then the second x is at 150, then at third x is 200 and so on fourth
 Why is using step important? Well, it helps in creating diversity and patterns so that its not just boring and plain and each value having the same value
 ### Index
+If you already did basic javascript/have some kind of experiences of coding. You know that index is the location of which an element in an certain place is. For example, let's say we have an array call 
+```js
+ var fruits = ["apple, pineapple, coconut"]
+```
+Now if we want the index let's say 0, that would give us the value of apple, and so on. By this logic it's also somewhat the same for phaser usage
+What index is in phaser is where the sprite within an array of an action value starts from, basically their starting point
+```js
+Phaser.Actions.SetAlpha(objects, 0.5, 0, 5);
+```
+You can see that this code, nowhere does it directly say index. However there is something that needs clarifiying. That is: inside the parameter when passing action of an phaser. There are key components: array name, value, step, index, and direction. In the example above array name = objects, value = 0.5 (for transparent), 0 = step, and 2 is the index. What this this means?
+It means that the transparent change will only apply to the objects within the array starting from 6 not include 0, 1, 2, 3, 4, and 5
+And also small detail, technically this code does work, it's just that in this case there is only 5 sprites, meaning if it were to run the code, nothing would be affected since there isn't an sprite after 5
+### Direction
+Direction is basically pretty self-explantory. Basically it controls in which the direction when runned the phaser action the array will be looped through. Like which ways (not trying to confuse you) For example: let's say you are starting at 1 that just means from regular start to end, left --> right, and if its -1 then its from end to start, right --> left. One thing to note is that is does not change the array and what it does. It only changes how the order/when it will be applied to that sprite
+```js
+Phaser.Actions.SetAlpha(objects, 1, -0.1, 0, -1);
+```
+From the previous code in index, we know what each number in the parameters represent. So in this case it would be that, the phaser action will start from the last sprite since the direction is -1 and the 1 in the beginning means the transparent alpha value which is 1 meaning it will be fully visible after looping from end object to start. And lastly the step is -0.1 meaning everytime it loops the each sprite the alpha value of each will be decreased by -0.1. Meaning let's say if there is 3 sprites. It starts at the 3rd sprite which is the end, by which the alpha value is 1, then the 2nd sprite alpha value will be 0.9 and so on
+### Align To value
+Alignto, action code is basically helping you to line up more than 1+ sprite towards an specfic position in an scene. Or as phaser documentation describe it "as taking an array of sprites and lining up against each other"
+Let's take an closer look at an code example provided by phaser:
+```js
+Phaser.Actions.AlignTo(items, position, [offsetX], [offsetY]);
+```
+<ul>
+<li>>The items in this action code refers to the items you want it aligning to/updated towards to</li>
+<li>Position refers to the position in which the item is to be aligned with</li>
+<li>offsetX is the horizontal offset from the position</li>
+<li>offsetY is the vertical offset from the position</li>
+</ul>
+How can this be used?
+
+```js
+var objectsNames = [Object1, Object2, Object3];
+Phaser.Actions.AlignTo(objectsNames, Phaser.Display.Align.LEFT_CENTER);
+```
+In the variable objectsNames we have created an array, and inside those array there is 3 sprite/objects. By taking a look at the code below: the three sprite/object will be lined up vertically centered towards. (And also before you start saying that this code won't work, think of before the code there is already three objects/sprites called object1, object2, and object3
+
+
 [Previous](entry02.md) | [Next](entry04.md)
 
 [Home](../README.md)
