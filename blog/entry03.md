@@ -2,7 +2,7 @@
 ##### 2/2/26
 
 # Context
-Soooo, we are back again for the 3rd time, for blog 3 I'll be mainly talking about others codes that I tinkered with my tool phaser. NOT including camera/visibility/viewports in the second blog. The main topics that I'll be covering for this blog is phaser actions, sub-categories parameters(steps index and directions) alignto
+Soooo, we are back again for the 3rd time, for blog 3 I'll be mainly talking about others codes that I tinkered with my tool phaser. NOT including camera/visibility/viewports in the second blog. The main topics that I'll be covering for this blog is phaser actions, sub-categories parameters(steps index and directions) alignto. And also please do refer back to the learning log and some content that is here will be pullled from the [learning log](
 
 # Content for Phaser Action
 Of course, we are going to start off basic since I are still learning/tinkering with my tool. So then it brings us the question..What exactly is phaser action in phaser? Think of action in phaser as an way of applying an existing function towards more than 1+ objects all at once. More specifically:
@@ -15,8 +15,9 @@ Now I know this might be a little hard to digest with. But I'll show you can qui
 ```js
 Phaser.Actions.SetAlpha(myGroup.getChildren(), 0.5);
 ```
-This is an code provided by the phaser. I know, I know you might be thinking what is "myGroup" and what is "getChildren", 0.5 and etc.
-Basically the idea is that the "myGroup" inside contains multiple objects more specifically contains more than 1 sprite. Now before getting into what is getChildren. I'll explain what the 0.5 is. In phaser sprite are controlled by alpha values. In other words, the alpha values that controls the sprite determines the sprite's transparent. In this case the sprite/object in this case of myGroup will be 0.5 meaning its 50% transparent whereas 1 is no transparent and 0 is fully transparent. And it's clear that in the code before the () there is an code called "setAlpha" which supports this idea. getChildren basically returns the number of arrays of sprite within the myGroup. Since inside that myGroup code there should be more than 1+ sprite inside. Now to put all those ideas together the code will first get all the sprite contained in then the myGroup then sets the alpha value of each sprite inside the myGroup to 0.5
+<p>This is an code provided by the phaser. I know, I know you might be thinking what is "myGroup" and what is "getChildren", 0.5 and etc.
+Basically the idea is that the "myGroup" inside contains multiple objects more specifically contains more than 1 sprite. Now before getting into what is getChildren. I'll explain what the 0.5 is. In phaser sprite are controlled by alpha values. In other words, the alpha values that controls the sprite determines the sprite's transparent. In this case the sprite/object in this case of myGroup will be 0.5 meaning its 50% transparent whereas 1 is no transparent and 0 is fully transparent.</p>
+<p>And it's clear that in the code before the () there is an code called "setAlpha" which supports this idea. getChildren basically returns the number of arrays of sprite within the myGroup. Since inside that myGroup code there should be more than 1+ sprite inside. Now to put all those ideas together the code will first get all the sprite contained in then the myGroup then sets the alpha value of each sprite inside the myGroup to 0.5</p>
 Moving on, you know that from the earlier code that when doing an phaser action code, its usually passed in the value of an alpha, (also scale,and position) and also within an arrays of multiple sprites. But there are also three extra parameters values that you can pass the phaser action within. This includes:
 <ul>
   <li>index</li>
