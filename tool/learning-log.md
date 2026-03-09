@@ -177,6 +177,56 @@ Phaser.Actions.SetX(sprites, 100);
 
 ### 3/2/26 Learn
 
+```js
+Phaser.Action.Alignto
+```
+<ul>
+  <li>Used to line up game objects in an certain point or position within the screen</li>
+  <li>From the phaser documentation within are 4 parameters: (items, position, [offsetX], [offsetY]); </li>
+  <li>The item parameter represents the things/objects that you want to align to or move to an specfic position</li>
+  <li>For example:6 gameObjects and etc</li>
+  <li>The position parameters is where you want the objects/thing to be align to; top left, top right</li>
+  <li>Then there's offsetX and offsetY;x moves them either right or left, y moves it up or down</li>
+
+  ```js
+var items = [item1, item2, item3]
+Phaser.Actions.AlignTo(items,Phaser.Display.Align.TOP_RIGHT,)
+```
+<li>Selects the items in this case just items which inside are array of items, then display it or position it top right, and for the offsetX and offsetY its optional meaning it will be located in the top right corner</li>
+
+```js
+Phaser.Actions.Angle
+```
+<li>Rotates the game objects by an amount of degrees</li>
+<li>Two parameters inside: (myObjects, 90);</li>
+<li>The myObjects is the same as earlier basically the item or the game object you want to rotate for an certain degree</li>
+<li>And the 90 represents the amount of degree you want to rotate it, in which this case from phaser example would be an 90 degree angle</li>
+<li>Also if the value of the degree is positive it rotates it clockwise, however if the value is negative it will rotate it counterclockwise</li>
+
+```js
+var items = [item1, item2, item3]
+Phaser.Actions.AlignTo(items,Phaser.Display.Align.TOP_RIGHT,)
+Phaser.Actions.Angle(items, 45)
+```
+```
+Phaser.Actions.Call
+```
+<li>Runs an function on each object within an array, basically runs the code indivudally through every item illierating it</li>
+<li>Three paramters:(myObjects, callback, context)</li>
+<li>myObjects is the item/object you want to select; self explantory</li>
+<li>The callback is the function that will be runned on each object</li>
+<li>The context is optional</li>
+<li>The code will look something to this:</li>
+
+```js
+var items = [item1, item2, item3]
+Phaser.Actions.Call(items, function(item) {
+item.setScale(0.4);
+});
+```
+<li>Selects the items array, illterates it and calls the function so that the item scale will be 0.5 of its original size</li>
+
+</ul>
 
 <!--
 * Links you used today (websites, videos, etc)
