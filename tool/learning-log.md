@@ -175,6 +175,8 @@ Phaser.Actions.SetX(sprites, 100);
 <li>Just to wrap it up for step: steps basically let you change an value of an object across multiple instances instead of making them all the same values with no variations(Do mind that this parameter is optional)</li>
 </ul>
 
+### 3/2/26 Learn
+
 
 <!--
 * Links you used today (websites, videos, etc)
