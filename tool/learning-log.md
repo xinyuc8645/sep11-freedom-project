@@ -208,6 +208,7 @@ var items = [item1, item2, item3]
 Phaser.Actions.AlignTo(items,Phaser.Display.Align.TOP_RIGHT,)
 Phaser.Actions.Angle(items, 45)
 ```
+
 ```
 Phaser.Actions.Call
 ```
