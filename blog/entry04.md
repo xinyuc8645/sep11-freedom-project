@@ -79,6 +79,8 @@ var platform2 = testplatform.create(500,300, 'concrete1')
 ```
 No need for pre load since we are using the same texture for the same platform(might vary/change though)
 # Engineering Design Process
+From the last blog, I claim that I was still somewhere around step 2 which is the research and gathering part. However, by this blog I can say that I am somewhere between steps 3-5. Why? Because as in the content section you can see I already start creating platforms, backgrounds, basic canvas and etc. However this isn't an finish product nor can i say it reaches the goal of an MVP yet. Since the mininmum MVP of our game should be included that when the user inputs the key of "wasd"  and up, down, right, left key the player 1 and player 2 sprite should both able to move. The sprite is able to be to jump/interact with items and etc. Basically viable but not perfect. Since step 5 is designing/plan for solving the problem, by using different materials and etc. Additonally to add on to this, in step 3 its brainstorming which currently me and my partner is still doing. We are still brainstorming in different ways, certain things can interact, move, collide and etc. And last but not least step 4 which chooses the best one to solve the problem which correlates to any problem that we could encounter like, movement issue, object not appearing issue and etc. Thus, this is why I say that we are in-between steps of 3-5. However by next blog, we should be entirely focus on step 5.
+# Skills
 
 Text
 
