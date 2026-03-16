@@ -81,6 +81,47 @@ No need for pre load since we are using the same texture for the same platform(m
 # Engineering Design Process
 From the last blog, I claim that I was still somewhere around step 2 which is the research and gathering part. However, by this blog I can say that I am somewhere between steps 3-5. Why? Because as in the content section you can see I already start creating platforms, backgrounds, basic canvas and etc. However this isn't an finish product nor can i say it reaches the goal of an MVP yet. Since the mininmum MVP of our game should be included that when the user inputs the key of "wasd"  and up, down, right, left key the player 1 and player 2 sprite should both able to move. The sprite is able to be to jump/interact with items and etc. Basically viable but not perfect. Since step 5 is designing/plan for solving the problem, by using different materials and etc. Additonally to add on to this, in step 3 its brainstorming which currently me and my partner is still doing. We are still brainstorming in different ways, certain things can interact, move, collide and etc. And last but not least step 4 which chooses the best one to solve the problem which correlates to any problem that we could encounter like, movement issue, object not appearing issue and etc. Thus, this is why I say that we are in-between steps of 3-5. However by next blog, we should be entirely focus on step 5.
 # Skills
+### In-depth Programming Skills
+I know, I know I sound very broad when I said the skill of "in-depth programming skill" however that's not broad..Why? Because during this basic setup I know/understand how to organized and structured the game with different functions with each having their own usuage for different phases of the game. For example:
+```js
+scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+```
+I learned that in phaser, there are three main game scene contained. Which is preload, create, and update.
+<ul>
+    <li>Preload=Preloads any image beforehand so when you try to create the image it loads and you are able to use it</li>
+    <li>Create=Create basically creates the already preloaded image</li>
+    <li>Update=Updates the objects so that it correlates with any movement implanted</li>
+</ul>
+By these scene it then help me organize my code into these categories, for example:
+
+```js
+function preload() {
+    this.load.image('bluesky', 'assets/bluesky.jpg');
+    this.load.image('concrete1', 'assets/concrete1.png');
+    this.load.image('player1', 'assets/player1.png')
+    this.load.image('player2', 'assets/player2.png')
+}
+```
+This is for all the images/jpg/png that needs to be pre-loaded before-hand
+And this:
+```js
+function create() {
+    //background(placeholder for now not decided)
+    var skyBg = this.add.image(600, 375, 'bluesky')
+    skyBg.setDisplaySize(1200, 750);
+    //platform(also undecided for now placeholder)
+    var testplatform = this.physics.add.staticGroup()
+    var platform = testplatform.create(300, 500, 'concrete1')
+    platform.displayWidth = 250;
+    platform.displayHeight = 30;
+    platform.refreshBody()
+```
+Makes it so I can create background, platforms with the already preloaded images. This also lead me thinking into thinking chronologically because the order matters. Since if you put create first, then there won't be no images to be created from since non are preloaded. Therefore preloaded comes first then after it would be create
 
 Text
 
