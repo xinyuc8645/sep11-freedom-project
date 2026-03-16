@@ -78,8 +78,36 @@ var platform2 = testplatform.create(500,300, 'concrete1')
     platform.refreshBody()
 ```
 No need for pre load since we are using the same texture for the same platform(might vary/change though)
+### Sprites
+The sprite creation is the same for the preloaded section:
+```js
+this.load.image('player1', 'assets/player1.png') //refers back to sprite texture for player 1
+this.load.image('player2', 'assets/player2.png') //refers back to sprite texture for player 2
+```
+Preloads the sprite image from the assets folder, and both are different one for player 1 and one for player 2
+Now this is the part where its a bit lengthy with some of my comments:
+```js
+player1 = this.physics.add.sprite(200,300, 'player1') //adds the sprite based on the physic setting of arcade on the location of x value of 200, and y value of 300
+    player1.setBounce(0.2) //Jump value of 0.2
+    player1.setCollideWorldBounds(true) //Makes it so they will stay within the boundary of the canvas
+    this.physics.add.collider(player1, testplatform) //Collision between the sprite and the platforms
+    player1.displayWidth = 50;
+    player1.displayHeight = 50
+```
+Ok so, we know that we named the player 1 sprite just "player1" ok, now we add the sprite using physic within. Why exactly? Because so it can match the velocity, gravity that our arcade setting has so its more accurate and viable. Then we set the location of the sprite to the x value of 200 and the y value of 300. Which actually lands perfectly ontop of the already created platform from before
+```js
+ player1.setBounce(0.2) //Jump value of 0.2
+```
+I commented this that it has a jump value of 0.2, and yes meaning if they were to bounce off or jump they would have a jump force of 0.2
+```js
+player1.setCollideWorldBounds(true) //Makes it so they will stay within the boundary of the canvas
+this.physics.add.collider(player1, testplatform) //Collision between the sprite and the platforms
+```
+Self explantory with the comments I made, however if you want an TL;DR ```js setCollideWorldBounds(true) ``` which we enable it to be true makes it so that the sprite will not fall out of the canvas range. Meaning they have to be within the range of the x and y values of our canvas value. And makes it so the collision is between the sprite 1 and the platform, which indicates that the sprite won't just randomly phase out of the platform
 # Engineering Design Process
-From the last blog, I claim that I was still somewhere around step 2 which is the research and gathering part. However, by this blog I can say that I am somewhere between steps 3-5. Why? Because as in the content section you can see I already start creating platforms, backgrounds, basic canvas and etc. However this isn't an finish product nor can i say it reaches the goal of an MVP yet. Since the mininmum MVP of our game should be included that when the user inputs the key of "wasd"  and up, down, right, left key the player 1 and player 2 sprite should both able to move. The sprite is able to be to jump/interact with items and etc. Basically viable but not perfect. Since step 5 is designing/plan for solving the problem, by using different materials and etc. Additonally to add on to this, in step 3 its brainstorming which currently me and my partner is still doing. We are still brainstorming in different ways, certain things can interact, move, collide and etc. And last but not least step 4 which chooses the best one to solve the problem which correlates to any problem that we could encounter like, movement issue, object not appearing issue and etc. Thus, this is why I say that we are in-between steps of 3-5. However by next blog, we should be entirely focus on step 5.
+<p>From the last blog, I claim that I was still somewhere around step 2 which is the research and gathering part. However, by this blog I can say that I am somewhere between steps 3-5. Why? Because as in the content section you can see I already start creating platforms, backgrounds, basic canvas and etc. However this isn't an finish product nor can i say it reaches the goal of an MVP yet. Since the mininmum MVP of our game should be included that when the user inputs the key of "wasd"  and up, down, right, left key the player 1 and player 2 sprite should both able to move. The sprite is able to be to jump/interact with items and etc. Basically viable but not perfect.</p> 
+<p>Since step 5 is designing/plan for solving the problem, by using different materials and etc. Additonally to add on to this, in step 3 its brainstorming which currently me and my partner is still doing. We are still brainstorming in different ways, certain things can interact, move, collide and etc. And last but not least step 4 which chooses the best one to solve the problem which correlates to any problem that we could encounter like, movement issue, object not appearing issue and etc. Thus, this is why I say that we are in-between steps of 3-5. However by next blog, we should be entirely focus on step 5.</p>
+
 # Skills
 ### In-depth Programming Skills
 I know, I know I sound very broad when I said the skill of "in-depth programming skill" however that's not broad..Why? Because during this basic setup I know/understand how to organized and structured the game with different functions with each having their own usuage for different phases of the game. For example:
@@ -122,9 +150,6 @@ function create() {
     platform.refreshBody()
 ```
 Makes it so I can create background, platforms with the already preloaded images. This also lead me thinking into thinking chronologically because the order matters. Since if you put create first, then there won't be no images to be created from since non are preloaded. Therefore preloaded comes first then after it would be create
-
-Text
-
 [Previous](entry03.md) | [Next](entry05.md)
 
 [Home](../README.md)
