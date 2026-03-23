@@ -229,6 +229,86 @@ item.setScale(0.4);
 
 </ul>
 
+## 3/16/26 Physics
+<ul>
+  <li>Ok, so just a change of plan for this week's learning log; focus on the physics since that's what I added towards the game therefore I need to learn more about it --> next learning log will stick to the usual</li>
+  
+```js
+const config = {
+    // ...
+    physics: {
+        default: 'arcade'
+    },
+    // ...
+};
+
+const game = new Phaser.Game(config);
+```
+<li>This is the basic configuration for physics for phaser; as there is two types: arcade and matter</li>
+<li>Arcade --> mainly for game usage; fast quick, easy to use, involves collision, and etc</li>
+<li>Matter --> mainly for stuff that are heavily reliance on physics as its more realistc, complicated/complex</li>
+<li>Matter also involves stuff like: frictions,rotations and etc</li>
+<li>Thus for this project only arcade physics will be focused on</li>
+<li> As you can see for the above code in the configuration setting in the physics {} you just type arcade which sets the physics mode to arcade basically</li>
+
+```js
+      //    x: 0,
+      //    y: 0,
+      //    width: scene.sys.scale.width,
+      //    height: scene.sys.scale.height,
+      //    gravity: {
+      //        x: 0,
+      //        y: 0
+      //    },
+      //    checkCollision: {
+      //        up: true,
+      //        down: true,
+      //        left: true,
+      //        right: true
+      //    },
+```
+<li>These are some of the possible configuration for arcade settings (pulled from the phaser documentation website)</li>
+<li>For exmaple width, gravity; controlling how much gravity a certain object can have when they jump, checking for collisions and etc</li>
+
+```js
+this.physics.add.collider(objectsA, objectsB);
+```
+<li>As you can see this adds/enables the physics of collider between two objects within the parameter, for example:</li>
+
+```js
+ this.physics.add.collider(player1, testplatform)
+```
+<li>In the game(which is not finished), I used this code and enabled the collider between the player1 and the testplatform.</li>
+<li>You might think now: "Whats player1 and testplatform", well its just as it states! There is now between collision between both the player 1 mode/object and the platform in which the player model can move/jump into</li>
+<li>Which also means that if the player1 object WERE to jump onto the platform they won't just randomly fall through and clip through the platform in which the player1 object stands on..</li>
+
+```js
+var collider = this.physics.add.collider(
+  objectsA,
+  objectsB,
+  collideCallback
+);
+```
+<li>If you want to test or expect and result of the collision between two objects you can use:(above)</li>
+<li>For example:</li>
+
+```js
+var collider = this.physics.add.collider(
+  player1,
+  testplatform,
+  function () {
+console.log("You touched it");}
+);
+```
+<li>This will then expect an reuslt when player1 and the testplatform collide or touches each other, and will return "You touched it" also notice how callCollideBack is removed? because its not used anywhere in this function</li>
+<li>As for the parameters there is many usage as of what goes in: Can either be, object, an array of game objects, groups containing physics, or an array of groups containing that physics</li>
+<li>You can remove an collider by doing:</li>
+
+```js
+.removeCollider
+```
+
+</ul>
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
