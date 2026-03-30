@@ -309,6 +309,44 @@ console.log("You touched it");}
 ```
 
 </ul>
+
+## 3/23/26 Mixures ot both physics and actions
+<li>Okayyyy..For this learning log I'll just cover both physics and actions since focusing on one time isn't very efficent, therefore combining both is!</li>
+<li>Apparently, you can set the area in which an sprite can have limited place it can move too, like basically they can't go out of frame or out of the canva by setting an world bound</li>
+<li>By setting/enabling the world bound collison for it you need to do:</li>
+
+```js
+body.setCollideWorldBounds(true)
+```
+<li>As this turns/enables the body world bound collision so that sprite cannot move OUTSIDE of that world bound</li>
+<li>Which means that if an sprite were to touch or to basically collide with it, either they get stopped(mostly likely) or bounced back depending on which properties is used</li>
+<li>You can give an location and position in which the world bound is going to occur:</li>
+
+```js
+this.physics.world.setBounds(x, y, width, height)
+this.physics.world.setBounds(x, y, width, height, checkLeft, checkRight, checkUp, checkDown)
+```
+<li>As you can see this code from phaser, nothing is unfaimilar, the x and y setting the x coordinates and y coordinates. The width and the height defining the sizes. The second one are optionals parameters as checkLeft/checkDown enables so that it checks for collision among certain specfic spots or edges within those locations</li>
+
+```js
+this.physics.world.setBounds(0, 0, 1700, 750);
+```
+<li>For such in the code above, let's say I used the code from my freedom project because we made the canva size of width: 1700 and height 750, the x and y starts both at 0 and 0 and both expands from 1700 and 750 respectively. Meaning any sprite that has the world bound collide true or enbabled once they reach this specfic threshold either they will be stopped or bound back depending on which properties is used</li>
+<li>Also just for clarification: this</li>
+
+```js
+body.setCollideWorldBounds(true)
+```
+<li>Is only applied for an sprite meaning its individually</li>
+<li>However you can set the collisio for the whole entire thing by doing:</li>
+
+```js
+this.physics.world.setBoundsCollision();
+// this.physics.world.setBoundsCollision(left, right, up, down);
+```
+<li>As this code applies to the whole world itself not the body nor the sprite</li>
+<li>Which also means that this code has the ability to allow which edge the sprite will make it be able to pass through;meaning if let's say the right parameter is false, the sprite will not be able to collide with the edges of the right side. But if I put true then yes it will be able to collide. Meaning even if you have that collider world bound being enable and true it will only collide with edges that are true</li>
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
