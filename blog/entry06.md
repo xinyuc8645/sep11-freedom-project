@@ -1,7 +1,10 @@
 # Entry 6
 ##### 5/21/26
 
-Text
+## Introduction
+
+## Content
+#### Takeaways: Class presentations
 
 [Previous](entry05.md) | [Next](entry07.md)
 
