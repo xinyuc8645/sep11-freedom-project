@@ -1,15 +1,16 @@
 # SEP11 Freedom Project
-by **X**
+by Xin Yu Chen & Rain Song(Partner Peer)
 
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript alongside with an tool chosen from their own choose; for example in this case phaser.
 
 For my project, I chose to collaborate and work in pairs with one of my peers using the tool of phaser and others sources including, outside research sources(youtube, phaser documentations) and tinkering with the tools ourselves in order to create an game that is based off of dungeon genre
-# Blog Overview
-Throughout the below listed blogs entires, you will get an general information and concept of how the project came to be, how I tinkered with my tool and the creation of the game from start to finish
+# Blog Overview/Summary
+Throughout the below listed blogs entires, you will get an general information and concept of how the project came to be, how I tinkered with my tool and the creation of the game from start to finish and the process within.
 ### What is SEP11 and how was it different from SEP10/What did you learn in SEP11?
 I'm going to be real, SEP11 is ALOT way more different than what SEP11 had to offer. Back in SEP10 we only learned about basic HTML including website structures, basic CSS, bootstrap and basically let's call that frontend of the the web-design and coding. Whereas compare it to SEP11 its more of like the backend involved. For example you get to learn aobut Javascript, how you can directly change something in an website, we also experienced with p5js which is more of like an creative aspect but still lot's of fun. However, by the end goal of SEP10 and SEP11, the objective still remains the same. Freedom project, you learn the tool you use and you create an game/website(whatever you can think of only limitation is SEP10 in which only website is allowed and 3d stuff) and then you showcase it off during the end of year expo.
-
+### SEP11 Freedom Project
+Earlier section, I mentioned that SEP11's freedom project and SEP10's freedom project was similar, nothing too much different. Since the over-arching goal is to create something you are passioning about and using the tool you tinkered with in order to creat that end result. Once again to elaborate, there is main stages. First you choose an tool, ranging from easy, medium and to hard. Then you tinkered with the tool that you choose for a couple of months. Then you create an MVP(minimum viable product) of the tool you tinkered with and something you are passioned about, then you will give an in-class presentation about your tool, your MVP, then lastly you show it off at the expo. And also SEP11 you have a bit more freedom than SEP10 in terms of ideas
 ## Links For Both Product And Presentation
 
 [Product](https://rains1435.github.io/our-first-game/)
