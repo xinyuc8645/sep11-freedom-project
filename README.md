@@ -2,7 +2,7 @@
 by **X**
 
 ## Context
-I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
+I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript alongside with an tool chosen from their own choose; for example in this case phaser.
 
 For my project, I chose to collaborate and work in pairs with one of my peers using the tool of phaser and others sources including, outside research sources(youtube, phaser documentations) and tinkering with the tools ourselves in order to create an game that is based off of dungeon genre
 # Blog Overview
